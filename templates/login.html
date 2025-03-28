@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Prijava v Klepet</title>
+    <title>Prijava</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #login-container {
+            display: block;
+            border: 3px solid black;
+            border-radius: 10px;
+            width: fit-content;
+            padding: 3em;
+            background-color: lightskyblue;
+            margin: auto;
+            margin-top: 30vh;
+        }
+        h2 {
+            text-align: center;
+        }
+        button {
+            display: block;
+            border: 3px solid black;
+            border-radius: 10px;
+            min-width: fit-content;
+            width: 50%;
+            background-color: white;
+            margin: auto;
+            margin-top: 20px;
+            padding: 0.7em;
+        }
+    </style>
 </head>
 <body>
-    <h1>Dobrodošli v Preprostem Klepetu</h1>
-    
     <div id="error-message" style="color: red; display: none;"></div>
     
     <div id="login-container">
