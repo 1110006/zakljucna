@@ -4,29 +4,42 @@
     <title>Prijava</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
+        body { font-family: "Trebuchet MS", sans-serif;}
         #login-container {
             display: block;
-            border: 3px solid black;
-            border-radius: 10px;
+            border: 0.2em solid black;
+            border-radius: 0.3em;
             width: fit-content;
             padding: 3em;
-            background-color: lightskyblue;
+            background-color: ivory;
             margin: auto;
-            margin-top: 30vh;
+            margin-top: 25vh;
         }
+        h1 { text-align: center; }
         h2 {
             text-align: center;
+            font-family: 'Times New Roman', serif;
         }
         button {
             display: block;
-            border: 3px solid black;
-            border-radius: 10px;
+            border: 0.1em solid black;
+            border-radius: 2em;
             min-width: fit-content;
             width: 50%;
             background-color: white;
             margin: auto;
             margin-top: 20px;
             padding: 0.7em;
+            font-weight: bold;
+        }
+        input {
+            border-width: 0.1em;
+            border-color: black;
+            border-style: solid;
+            border-radius: 2em;
+            height: 2em;
+            width: 100%;
+            margin: 0.5em 0;
         }
     </style>
 </head>
@@ -34,16 +47,19 @@
     <div id="error-message" style="color: red; display: none;"></div>
     
     <div id="login-container">
+        <h1>Naslov</h1>
         <h2>Prijava ali Registracija</h2>
         <p>Če račun ne obstaja, bo ustvarjen nov.</p>
         
         <div>
             <label for="username">Uporabniško ime:</label>
+            <br>
             <input type="text" id="username" required>
         </div>
         
         <div>
             <label for="password">Geslo:</label>
+            <br>
             <input type="password" id="password" required>
         </div>
         
